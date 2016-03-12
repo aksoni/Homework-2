@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:padding="20dp"
@@ -10,23 +10,25 @@ android:orientation="vertical" >
 <CalendarView
     android:id="@+id/calendar"
     android:layout_margin="10dp"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add"
-        android:id="@+id/button"
-        android:layout_gravity="center_horizontal"
-        android:onClick="onClickView"/>
+        android:id="@+id/button3"
+        android:layout_alignTop="@+id/calendar"
+        android:layout_toEndOf="@+id/calendar"
+        android:onClick="onClickAdd"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/view"
-        android:id="@+id/button2"
-        android:layout_gravity="center_horizontal"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/button3"
         android:onClick="onClickView"/>
 
-</LinearLayout>
+</RelativeLayout>
