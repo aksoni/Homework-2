@@ -3,4 +3,5 @@
     <color name="blue">#89cff0</color>
     <string name="add">Add Event</string>
     <string name="view">View Events</string>
+    <string name="date">Date</string>
 </resources>
